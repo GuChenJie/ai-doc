@@ -1,33 +1,12 @@
----
-home: true
-title: Home
-heroImage: https://vuejs.press/images/hero.png
-actions:
-  - text: Get Started
-    link: /get-started.html
-    type: primary
+# ai-doc
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
-    type: secondary
+这是 ai-doc 的文档站，主要记录项目里的 RAG 知识整理、chunk 策略和相关实现。
 
-features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+## 内容
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
----
+- [RAG 知识整理](./rag/)
+- [RAG Chunk](./rag/chunk)
 
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
+## 说明
 
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+站点内容围绕 `ai-doc` 本身组织，不再保留 VuePress 默认示例页。

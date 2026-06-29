@@ -3,16 +3,14 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-  lang: 'en-US',
+  lang: 'zh-CN',
   base: '/ai-doc/',
 
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: 'ai-doc',
+  description: 'ai-doc 的文档站',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
-
-    navbar: ['/', '/get-started', '/rag/', '/rag/chunk'],
+    navbar: ['/', '/rag/', '/rag/chunk'],
     sidebar: {
       '/rag/': [
         {
