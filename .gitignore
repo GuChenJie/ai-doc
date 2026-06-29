@@ -1,6 +1,7 @@
 node_modules/
 docs/.vuepress/dist/
-.vuepress/.temp/
-.vuepress/.cache/
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+.pnpm-store/
 .traces/
 .agents/

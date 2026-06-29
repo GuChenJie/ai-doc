@@ -1,6 +1,6 @@
-import { defaultTheme } from '@vuepress/theme-default'
-import { defineUserConfig } from 'vuepress'
+﻿import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { defineNavbarConfig, plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -9,16 +9,11 @@ export default defineUserConfig({
   title: 'ai-doc',
   description: 'ai-doc 的文档站',
 
-  theme: defaultTheme({
-    navbar: ['/', '/rag/', '/rag/chunk'],
-    sidebar: {
-      '/rag/': [
-        {
-          text: 'RAG',
-          children: ['/rag/', '/rag/chunk'],
-        },
-      ],
-    },
+  theme: plumeTheme({
+    navbar: defineNavbarConfig([
+      { text: 'RAG', link: '/rag/' },
+      { text: 'Chunk', link: '/rag/chunk' },
+    ]),
   }),
 
   bundler: viteBundler(),
